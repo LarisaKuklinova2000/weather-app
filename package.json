@@ -29,5 +29,8 @@
     "sass": "^1.59.3",
     "webpack": "^5.76.3",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "snapsvg": "^0.5.1"
   }
 }
