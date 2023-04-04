@@ -1,11 +1,19 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Mark';
 	margin: 0;
 	padding: 0;
-	font-family: 'Mark';
-	outline: none
+	outline: none;
+}
+
+.container {
+	background: linear-gradient(90deg, #754d8b 0%, #4e5992 100%);
+	font-size: 18px;
+	height: 100vh;
+	width: 100vw;
 }
 
 @import './card.scss';
+@import './search.scss';
 
 

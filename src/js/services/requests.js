@@ -7,15 +7,8 @@ const postData = async (url, data) => {
     return await res.text();
 };
 
-const getResource = async (url, query) => {
-    let res = await fetch(url, {
-        method: 'GET',
-        headers: {
-            'X-Gismeteo-Token': '56b30cb255.3443075',
-            'Accept-Encoding': 'gzip'
-        },
-        body: query
-    });
+const getResource = async (url) => {
+    let res = await fetch(url);
 
     if (!res.ok) {
         throw new Error(`could not fetch ${url}, status: ${res.status}`);
