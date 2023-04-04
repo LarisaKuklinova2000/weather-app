@@ -8,8 +8,9 @@ const autoprefixer = require("autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
-const dist = "./dist/";
-// const dist = "/Applications/MAMP/htdocs/test"; // Ссылка на вашу папку на сервере
+// const dist = "./dist/";
+// const dist = 'C:/openserver/domains/weather-proj';
+const dist = 'C:/OSPanel/domains/weather-proj';
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/*.html")
@@ -20,7 +21,7 @@ gulp.task("copy-html", () => {
 gulp.task("build-sass", () => {
   return gulp.src("./src/assets/sass/style.scss")
               .pipe(sass().on('error', sass.logError))
-              .pipe(gulp.dest("./dist/assets/css"))
+              .pipe(gulp.dest(dist + '/assets/css'))
               .pipe(browsersync.stream());
 });
 

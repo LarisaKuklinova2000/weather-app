@@ -4,9 +4,11 @@ const Weather = () => {
 
     const input = document.querySelector('.search'),
           btn = document.querySelector('.searchButton');
+    let lan, lon;
     
     btn.addEventListener('click', () => {
         getResource(`http://api.openweathermap.org/geo/1.0/direct?q=${input.value}&limit=5&appid=c1b4d20b0cce223d5983de6a25e8470d`)
+        .then(res => console.log(res))
     });
 }
 
