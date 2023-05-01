@@ -9,8 +9,8 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
 // const dist = "./dist/";
-// const dist = 'C:/openserver/domains/weather-proj';
-const dist = 'C:/OSPanel/domains/weather-proj';
+const dist = 'C:/openserver/domains/weather-proj';
+// const dist = 'C:/OSPanel/domains/weather-proj';
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/*.html")
